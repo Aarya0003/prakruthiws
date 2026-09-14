@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prakruthi Driving School & RTO Services in RR Nagar, Bengaluru. Expert driving lessons, DL support, vehicle registration, RC transfer, insurance, FC, PUC, and all RTO services since 2004.">
+  <title>Prakruthi Driving School | Driving School & RTO Services in RR Nagar, Bengaluru</title>
+  <link rel="stylesheet" href="styles.css?v=4.0">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <span class="logo-icon">🚗</span>
+          <span class="logo-text">Prakruthi Driving School</span>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="admin.html" class="admin-link">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Your Trusted Partner for Driving & RTO Services</h1>
+        <p class="hero-subtitle">Professional driving training and complete RTO documentation assistance in RR Nagar, Bengaluru since 2004</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>20+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat">
+            <strong>19</strong>
+            <span>Services Offered</span>
+          </div>
+          <div class="stat">
+            <strong>1000+</strong>
+            <span>Happy Customers</span>
+          </div>
+        </div>
+        <a href="#services" class="btn btn-primary btn-large">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Comprehensive driving school and RTO consultation services</p>
+      </div>
+      
+      <div class="service-filters">
+        <button class="filter-btn active" data-group="all">All Services</button>
+        <button class="filter-btn" data-group="Driving School & Licence">Driving & Licence</button>
+        <button class="filter-btn" data-group="Vehicle Documentation">Vehicle Docs</button>
+        <button class="filter-btn" data-group="Insurance & Compliance">Insurance & Compliance</button>
+        <button class="filter-btn" data-group="Transfer & Commercial">Transfer & Commercial</button>
+        <button class="filter-btn" data-group="RTO Services">RTO Services</button>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- Services will be loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Simple 4-step process to get started</p>
+      </div>
+      
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Choose Service</h3>
+          <p>Select the service you need from our comprehensive list</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>Submit Request</h3>
+          <p>Fill out the quick form with your details</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Get Confirmation</h3>
+          <p>Receive a reference number instantly</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3>We Handle It</h3>
+          <p>Our team contacts you and processes your request</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Request Form Section -->
+  <section id="request-form" class="request-form-section">
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="form-header">
+          <h2>Request a Service</h2>
+          <p>Fill out the form below and we'll get back to you shortly</p>
+        </div>
+        
+        <form id="requestForm" class="request-form">
+          <div class="form-group">
+            <label for="serviceSelect">Service Required *</label>
+            <select id="serviceSelect" name="service" required>
+              <option value="">Select a service</option>
+              <!-- Options will be loaded dynamically -->
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="10-digit mobile number" pattern="[6-9][0-9]{9}">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email (Optional)</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Details (Optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions..."></textarea>
+          </div>
+
+          <div class="form-note">
+            <strong>Note:</strong> Do not share sensitive documents like Aadhaar, RC, DL numbers, or payment details in this form. Our team will guide you on required documents after we contact you.
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-large">Submit Request</button>
+        </form>
+
+        <div id="formSuccess" class="form-success" style="display: none;">
+          <div class="success-icon">✓</div>
+          <h3>Request Submitted Successfully!</h3>
+          <p>Your reference number: <strong id="referenceNumber"></strong></p>
+          <p>Please save this number for future reference. Our team will contact you shortly.</p>
+          <button class="btn btn-secondary" onclick="resetForm()">Submit Another Request</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Prakruthi Driving School</h2>
+          <p>Established in 2004, Prakruthi Driving School has been serving the RR Nagar community in Bengaluru for over 20 years. We are your trusted partner for professional driving training and comprehensive RTO consultation services.</p>
+          <p>Our experienced team handles everything from driving lessons and licence applications to vehicle registration, ownership transfers, insurance support, and all RTO-related documentation.</p>
+          
+          <div class="trust-indicators">
+            <div class="trust-item">
+              <span class="trust-icon">⭐</span>
+              <div>
+                <strong>4.0 Rating</strong>
+                <p>175+ Google Reviews</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">📍</span>
+              <div>
+                <strong>Prime Location</strong>
+                <p>Opposite Sub Registrar Office</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">🕒</span>
+              <div>
+                <strong>Open Daily</strong>
+                <p>6:00 AM – 9:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-image-placeholder">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#fafafa"/>
+              <path d="M100,180 Q120,140 150,150 T200,140 T250,150 Q280,140 300,180 L300,300 L100,300 Z" fill="#1a1a1a"/>
+              <circle cx="140" cy="160" r="15" fill="#ffd700"/>
+              <circle cx="260" cy="160" r="15" fill="#ffd700"/>
+              <path d="M120,140 L120,100 L280,100 L280,140" fill="#2d2d2d" stroke="#1a1a1a" stroke-width="3"/>
+              <rect x="150" y="110" width="40" height="25" fill="#e5e5e5"/>
+              <rect x="210" y="110" width="40" height="25" fill="#e5e5e5"/>
+              <rect x="190" y="125" width="20" height="8" fill="#ffd700" rx="2"/>
+              <text x="200" y="250" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a1a1a">Learn to Drive</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Visit us or get in touch</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p><a href="tel:08028602807">080 2860 2807</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Address</h3>
+          <p>No. 472, opposite Sub Registrar Office, Jawaharlal Nehru Road, BEML Layout 3rd Stage, RR Nagar, Bengaluru 560098</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🕒</div>
+          <h3>Hours</h3>
+          <p>Open Daily<br>6:00 AM – 9:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Prakruthi Driving School</h4>
+          <p>Your trusted partner for driving and RTO services in RR Nagar, Bengaluru since 2004.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li>Driving Classes</li>
+            <li>Licence Services</li>
+            <li>Vehicle Registration</li>
+            <li>RTO Documentation</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📞 080 2860 2807</p>
+          <p>📍 RR Nagar, Bengaluru</p>
+          <p>🕒 Daily: 6 AM – 9 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Prakruthi Driving School. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

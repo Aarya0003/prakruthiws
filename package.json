@@ -1,0 +1,14 @@
+{
+  "name": "prakruthi-driving-school",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prakruthi Driving School marketing site and enquiry API",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
